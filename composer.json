@@ -1,0 +1,29 @@
+{
+    "name": "fangxu/donews-user-action",
+    "description": "DoNews User",
+    "keywords": ["laravel","composer","donews"],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Fangxu\\UserAction\\": "src/"
+        }
+    },
+    "require" : {
+        "nmred/kafka-php": "v0.2.0.8"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fangxu\\UserAction\\UserActionEventServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+          "name": "nfangxu",
+          "email": "nfangxu@gmail.com",
+          "homepage": "https://nfangxu.com"
+        }
+    ]
+}
